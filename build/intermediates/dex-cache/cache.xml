@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.1.1_b47e2200521412e993bc5dddea4d7685e3bd87bb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="bd93c8ec2d3bebfc6f103756a91881e769ed669a">
+        <dex dex="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6c3d3ff13dcf0d5305a9843478e57837167dc9fa\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.1.1_466649f009bac910ccd7b5c47dd223d90da8f285\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.1.1_ed316ee1bcd18d29e83fa8954750d36fdb1deb7a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="58c82f69461082f2fe64394db33d8f4c5e9b6b86">
+        <dex dex="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d771a65256b0ac5c1c5d16e102d88a993588a094\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.1.1_2058c1253eeb238774bac90afe2d168f9e7b746e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Dushan\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.1.1_b577b56e8bc5b704c058ab26cd4b46853674ec88\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.1.1_efe8f256c7b41182f21b7d3c7d0b4e83e4bf0a66\classes.dex" />
+    </item>
+
+</items>
