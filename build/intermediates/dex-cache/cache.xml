@@ -12,7 +12,7 @@
         jar="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="bd93c8ec2d3bebfc6f103756a91881e769ed669a">
+        sha1="e72ad1744f3b8f6f8e331151881051c77a44eaa1">
         <dex dex="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6c3d3ff13dcf0d5305a9843478e57837167dc9fa\classes.dex" />
     </item>
     <item
@@ -33,7 +33,7 @@
         jar="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="58c82f69461082f2fe64394db33d8f4c5e9b6b86">
+        sha1="cf5e495ce0e866add384d3e4092abcc25b8dc366">
         <dex dex="C:\Users\Dushan\AndroidStudioProjects\SimpleExpenseManager6\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d771a65256b0ac5c1c5d16e102d88a993588a094\classes.dex" />
     </item>
     <item

@@ -16,6 +16,7 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.ui;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -67,10 +68,15 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
         /***  Begin generating dummy data for In-Memory implementation  ***/
-        dbHelper=new DatabaseHelper(this);
-        dbHelper.getWritableDatabase();
+        dbHelper=new DatabaseHelper(getApplicationContext());
         expenseManager = new PersistentDemoExpenseManager(dbHelper);
+
         /*** END ***/
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
     /**

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -20,7 +21,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     SQLiteDatabase db;
 
-    private static final String DATABASE_NAME = "140323f.db";
+    private static final String DATABASE_NAME = "test4.db";
 
     //account table
     private static final String ACCOUNT_TABLE_NAME = "account_table";
@@ -34,7 +35,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String CREATE_ACCOUNT_TABLE = "create table " + ACCOUNT_TABLE_NAME + " (" + A_COL_1_ID + " integer primary key autoincrement,"
             + A_COL_2_ACCOUNT_NUMBER + " text,"
             + A_COL_3_NAME + " text,"
-            + A_COL_4_BANK + " text"
+            + A_COL_4_BANK + " text,"
             + A_COL_5_BALANCE + " double)";
     //
 
@@ -64,6 +65,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL(CREATE_ACCOUNT_TABLE);
+        Log.i("aa",CREATE_ACCOUNT_TABLE);
         db.execSQL(CREATE_TRANSACTION_TABLE);
 
     }
@@ -99,7 +101,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValuesT.put(T_COL_3_TRANSACTION_TYPE, transaction.getExpenseType().toString());
         contentValuesT.put(T_COL_4_AMOUNT, transaction.getAmount());
         contentValuesT.put(T_COL_5_DATE, String.valueOf(transaction.getDate()));
-
 
         long result = db.insert(TRANSACTION_TABLE_NAME, null, contentValuesT);
         if (result == -1) return false;
@@ -141,16 +142,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 //        while (cur.moveToNext()) {
 //            accountnumList.add(cur.getString(0));
 //        }
+
         for(Account a: getAllAccounts()){
             accountnumList.add(a.getAccountNo());
         }
-
+//        SQLiteDatabase a= getWritableDatabase();
+//        String b= "select "+A_COL_2_ACCOUNT_NUMBER+" from "+ACCOUNT_TABLE_NAME;
+//        Cursor c= a.rawQuery(b,null);
+//        c.moveToFirst();
+//        while(c.moveToNext()){
+//            accountnumList.add(c.getString(0));
+//        }
         return accountnumList;
     }
 
     public ArrayList<Account> getAllAccounts() {
         ArrayList<Account> accountList = new ArrayList<>();
         Cursor cur = getAllAccountCursor();
+        cur.moveToFirst();
         while (cur.moveToNext()) {
             accountList.add(cursorToAccount(cur));
         }
@@ -160,6 +169,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public ArrayList<Transaction> getAllTransactions() {
         ArrayList<Transaction> transactionList = new ArrayList<>();
         Cursor cur = getAllTransactionCursor();
+        cur.moveToFirst();
         while (cur.moveToNext()) {
             transactionList.add(cursorToTransaction(cur));
         }
@@ -168,7 +178,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public Account getAccount(String accountNo) {
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("select * from " + ACCOUNT_TABLE_NAME + " where " + A_COL_2_ACCOUNT_NUMBER + " =" + accountNo, null);
+        Cursor res = db.rawQuery("select * from " + ACCOUNT_TABLE_NAME + " where " + A_COL_2_ACCOUNT_NUMBER + " = " + accountNo, null);
+        res.moveToFirst();
         return cursorToAccount(res);
     }
 
