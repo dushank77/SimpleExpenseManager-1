@@ -21,7 +21,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     SQLiteDatabase db;
 
-    private static final String DATABASE_NAME = "test4.db";
+    private static final String DATABASE_NAME = "140323f.db";
 
     //account table
     private static final String ACCOUNT_TABLE_NAME = "account_table";
